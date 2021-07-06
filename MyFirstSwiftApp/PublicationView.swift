@@ -10,7 +10,7 @@ import Kingfisher
 
 struct PublicationView: View {
     
-    let publication: Publication
+    @ObservedObject var publication: Publication
     
     var body: some View {
         VStack {
@@ -40,6 +40,7 @@ struct PublicationView: View {
                 ToggleButtonView(iconName: "heart", activeColor: Color.red, inactiveColor: Color.black, isActive: .constant(true))
                 ToggleButtonView(iconName: "flag", activeColor: Color.blue, inactiveColor: Color.black, isActive: .constant(false))
                 Spacer()
+                Text("\(publication.likesNumber) likes")
             })
         }
     }

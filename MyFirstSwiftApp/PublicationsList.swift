@@ -1,31 +1,17 @@
+//
+//  PublicationsList.swift
+//  MyFirstSwiftApp
+//
+//  Created by jpo on 06/07/2021.
+//
+
 import Foundation
 
-struct PreviewData {
-    
-    static let user = User(
-        imageUrl: URL(string: "https://personagenerator.com/user-sean.png"),
-        postCount: 77,
-        followers: 4974,
-        following: 60,
-        name: "Toto",
-        title: "Influenceur",
-        description: "Hello world !"
-    )
-    
-    static let publication = Publication(
-        author: PreviewData.user,
-        location: "Paris",
-        contentUrl: URL(string: "https://www.sortiraparis.com/images/58/83517/577986-visuel-paris-velo-quai-2.jpg"),
-        isLiked: false,
-        isSaved: false,
-        likesNumber: 10
-        
-    )
-    
-    static let publications = [
+class PublicationsList: ObservableObject {
+    @Published var publications = [
         Publication(
             author: PreviewData.user,
-            location: "Londres",
+            location: "Paris",
             contentUrl: URL(string: "https://www.sortiraparis.com/images/58/83517/577986-visuel-paris-velo-quai-2.jpg"),
             isLiked: false,
             isSaved: false,

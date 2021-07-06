@@ -6,7 +6,7 @@ struct HeaderView: View {
     // Toggle desc. dropdown
     @State private var isMore = false
     
-    let user: User
+    @ObservedObject var user: User
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -51,6 +51,21 @@ struct HeaderView: View {
                 }, label: {
                     Text(isMore ? "Less..." : "More...")
                         .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
+                })
+                Button(action: {
+                    user.followers += 1
+                }, label: {
+                    HStack {
+                        Spacer()
+                        Text("Follow +")
+                            .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                            .foregroundColor(.white)
+                            .padding()
+                        Spacer()
+                    }
+                    .background(Color.blue)
+                    .cornerRadius(5)
+                    .padding()
                 })
             })
         }

@@ -2,14 +2,14 @@ import SwiftUI
 
 struct ContentView: View {
     
-    // isLiked
+    @ObservedObject var postList = PublicationsList()
     @State var isLiked = false
     
     var body: some View {
         ScrollView {
             VStack {
                 HeaderView(user: PreviewData.user)
-                ForEach(PreviewData.publications) { publication in
+                ForEach(postList.publications) { publication in
                     PublicationView(publication: publication)
                 }
             }
