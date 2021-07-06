@@ -6,9 +6,13 @@ struct ContentView: View {
     @State var isLiked = false
     
     var body: some View {
-        VStack {
-            HeaderView(user: PreviewData.user)
-            LikeButtonView(isLiked: $isLiked)
+        ScrollView {
+            VStack {
+                HeaderView(user: PreviewData.user)
+                ForEach(PreviewData.publications) { publication in
+                    PublicationView(publication: publication)
+                }
+            }
         }
     }
 }

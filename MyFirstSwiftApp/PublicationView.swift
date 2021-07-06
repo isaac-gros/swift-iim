@@ -37,15 +37,8 @@ struct PublicationView: View {
                 .clipped()
             HStack(alignment: .center, spacing: 5, content: {
                 Spacer().frame(width: 1)
-                
-                // TODO : Create clickable buttons
-                // and isSaved + isLiked props for Publication
-                Image(systemName: "heart")
-                    .imageScale(.large)
-                    .foregroundColor(Color.black)
-                Image(systemName: "flag")
-                    .imageScale(.large)
-                    .foregroundColor(Color.black)
+                ToggleButtonView(iconName: "heart", activeColor: Color.red, inactiveColor: Color.black, isActive: .constant(true))
+                ToggleButtonView(iconName: "flag", activeColor: Color.blue, inactiveColor: Color.black, isActive: .constant(false))
                 Spacer()
             })
         }

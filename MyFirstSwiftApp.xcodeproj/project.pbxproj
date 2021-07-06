@@ -20,7 +20,7 @@
 		D0B2768F26944E3000D7894D /* PublicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B2768E26944E3000D7894D /* PublicationView.swift */; };
 		D0E4FE5B269338F90089F8B2 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = D0E4FE5A269338F90089F8B2 /* Kingfisher */; };
 		D0E4FE6626934B590089F8B2 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E4FE6526934B590089F8B2 /* HeaderView.swift */; };
-		D0E4FE6B26934D300089F8B2 /* LikeButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E4FE6A26934D300089F8B2 /* LikeButtonView.swift */; };
+		D0E4FE6B26934D300089F8B2 /* ToggleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E4FE6A26934D300089F8B2 /* ToggleButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,7 +59,7 @@
 		D0B2768626944BD900D7894D /* PlaygroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaygroundView.swift; sourceTree = "<group>"; };
 		D0B2768E26944E3000D7894D /* PublicationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicationView.swift; sourceTree = "<group>"; };
 		D0E4FE6526934B590089F8B2 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
-		D0E4FE6A26934D300089F8B2 /* LikeButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeButtonView.swift; sourceTree = "<group>"; };
+		D0E4FE6A26934D300089F8B2 /* ToggleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,7 +114,7 @@
 				D09D567D2692F5C2004E7CD9 /* MyFirstSwiftAppApp.swift */,
 				D09D567F2692F5C2004E7CD9 /* ContentView.swift */,
 				D0B2768626944BD900D7894D /* PlaygroundView.swift */,
-				D0E4FE6A26934D300089F8B2 /* LikeButtonView.swift */,
+				D0E4FE6A26934D300089F8B2 /* ToggleButtonView.swift */,
 				D09D56812692F5C3004E7CD9 /* Assets.xcassets */,
 				D09D56862692F5C3004E7CD9 /* Info.plist */,
 				D09D56832692F5C3004E7CD9 /* Preview Content */,
@@ -291,7 +291,7 @@
 				D03CFECF269489F900DFA03A /* Publication.swift in Sources */,
 				D09D56802692F5C2004E7CD9 /* ContentView.swift in Sources */,
 				D0B2768726944BD900D7894D /* PlaygroundView.swift in Sources */,
-				D0E4FE6B26934D300089F8B2 /* LikeButtonView.swift in Sources */,
+				D0E4FE6B26934D300089F8B2 /* ToggleButtonView.swift in Sources */,
 				D03CFED426948BD400DFA03A /* User.swift in Sources */,
 				D03CFED926948D6300DFA03A /* PreviewData.swift in Sources */,
 				D0E4FE6626934B590089F8B2 /* HeaderView.swift in Sources */,
