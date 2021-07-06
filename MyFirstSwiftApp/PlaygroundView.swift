@@ -8,19 +8,13 @@
 import SwiftUI
 
 struct PlaygroundView: View {
-    
-    @State var name = ""
-    @State var cheese = false
-    
-    var body: some View {
-        VStack {
-            Text("Hello \(name) !")
-            TextField("Votre nom", text: $name)
-            Toggle(isOn: $cheese, label: {
-                Text("Supplément fromage ?")
-            })
-        }
         
+    var body: some View {
+        List {
+            ForEach(PreviewData.publications) { publication in
+                PublicationView(publication: publication)
+            }
+        }
     }
 }
 
