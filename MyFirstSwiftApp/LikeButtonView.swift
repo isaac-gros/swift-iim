@@ -3,8 +3,7 @@ import Kingfisher
 
 struct LikeButtonView: View {
     
-    // State
-    @State var isLiked = false
+    @Binding var isLiked: Bool
     
     var body: some View {
         VStack {
@@ -23,7 +22,11 @@ struct LikeButtonView: View {
 
 struct LikeButtonView_Previews: PreviewProvider {
     static var previews: some View {
-        LikeButtonView()
-            .previewLayout(.sizeThatFits)
+        Group {
+            LikeButtonView(isLiked: .constant(true))
+            LikeButtonView(isLiked: .constant(false))
+        }
+        .previewLayout(.sizeThatFits)
+        .padding()
     }
 }

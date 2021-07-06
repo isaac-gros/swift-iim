@@ -13,6 +13,8 @@
 		D09D56852692F5C3004E7CD9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D09D56842692F5C3004E7CD9 /* Preview Assets.xcassets */; };
 		D09D56902692F5C3004E7CD9 /* MyFirstSwiftAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09D568F2692F5C3004E7CD9 /* MyFirstSwiftAppTests.swift */; };
 		D09D569B2692F5C3004E7CD9 /* MyFirstSwiftAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09D569A2692F5C3004E7CD9 /* MyFirstSwiftAppUITests.swift */; };
+		D0B2768726944BD900D7894D /* PlaygroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B2768626944BD900D7894D /* PlaygroundView.swift */; };
+		D0B2768F26944E3000D7894D /* PublicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B2768E26944E3000D7894D /* PublicationView.swift */; };
 		D0E4FE5B269338F90089F8B2 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = D0E4FE5A269338F90089F8B2 /* Kingfisher */; };
 		D0E4FE6626934B590089F8B2 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E4FE6526934B590089F8B2 /* HeaderView.swift */; };
 		D0E4FE6B26934D300089F8B2 /* LikeButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E4FE6A26934D300089F8B2 /* LikeButtonView.swift */; };
@@ -48,6 +50,8 @@
 		D09D56962692F5C3004E7CD9 /* MyFirstSwiftAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFirstSwiftAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D09D569A2692F5C3004E7CD9 /* MyFirstSwiftAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFirstSwiftAppUITests.swift; sourceTree = "<group>"; };
 		D09D569C2692F5C3004E7CD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0B2768626944BD900D7894D /* PlaygroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaygroundView.swift; sourceTree = "<group>"; };
+		D0B2768E26944E3000D7894D /* PublicationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicationView.swift; sourceTree = "<group>"; };
 		D0E4FE6526934B590089F8B2 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		D0E4FE6A26934D300089F8B2 /* LikeButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,11 +107,13 @@
 			children = (
 				D09D567D2692F5C2004E7CD9 /* MyFirstSwiftAppApp.swift */,
 				D09D567F2692F5C2004E7CD9 /* ContentView.swift */,
+				D0B2768626944BD900D7894D /* PlaygroundView.swift */,
 				D0E4FE6A26934D300089F8B2 /* LikeButtonView.swift */,
 				D09D56812692F5C3004E7CD9 /* Assets.xcassets */,
 				D09D56862692F5C3004E7CD9 /* Info.plist */,
 				D09D56832692F5C3004E7CD9 /* Preview Content */,
 				D0E4FE6526934B590089F8B2 /* HeaderView.swift */,
+				D0B2768E26944E3000D7894D /* PublicationView.swift */,
 			);
 			path = MyFirstSwiftApp;
 			sourceTree = "<group>";
@@ -274,9 +280,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D09D56802692F5C2004E7CD9 /* ContentView.swift in Sources */,
+				D0B2768726944BD900D7894D /* PlaygroundView.swift in Sources */,
 				D0E4FE6B26934D300089F8B2 /* LikeButtonView.swift in Sources */,
 				D0E4FE6626934B590089F8B2 /* HeaderView.swift in Sources */,
 				D09D567E2692F5C2004E7CD9 /* MyFirstSwiftAppApp.swift in Sources */,
+				D0B2768F26944E3000D7894D /* PublicationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
