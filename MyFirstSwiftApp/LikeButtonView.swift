@@ -13,7 +13,7 @@ struct LikeButtonView: View {
             }, label: {
                 Image(systemName: isLiked ? "heart.fill" : "heart")
                     .resizable()
-                    .aspectRatio(contentMode: /*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/)
+                    .aspectRatio(contentMode: .fit)
                     .frame(width: 50, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     .foregroundColor(isLiked ? Color.red : Color.black)
             })
@@ -24,5 +24,6 @@ struct LikeButtonView: View {
 struct LikeButtonView_Previews: PreviewProvider {
     static var previews: some View {
         LikeButtonView()
+            .previewLayout(.sizeThatFits)
     }
 }
