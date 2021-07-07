@@ -2,8 +2,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @ObservedObject var postList = PublicationsList()
-    @State var isLiked = false
+    @StateObject var postList = PublicationsList()
     
     var body: some View {
         ScrollView {

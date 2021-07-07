@@ -37,8 +37,8 @@ struct PublicationView: View {
                 .clipped()
             HStack(alignment: .center, spacing: 5, content: {
                 Spacer().frame(width: 1)
-                ToggleButtonView(iconName: "heart", activeColor: Color.red, inactiveColor: Color.black, isActive: .constant(true))
-                ToggleButtonView(iconName: "flag", activeColor: Color.blue, inactiveColor: Color.black, isActive: .constant(false))
+                ToggleButtonView(iconName: "heart", activeColor: Color.red, isActive: $publication.isLiked, onTapAction: {})
+                ToggleButtonView(iconName: "flag", activeColor: Color.blue, isActive: $publication.isSaved, onTapAction: {})
                 Spacer()
                 Text("\(publication.likesNumber) likes")
             })
