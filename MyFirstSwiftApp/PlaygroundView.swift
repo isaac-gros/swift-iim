@@ -13,28 +13,38 @@ struct PlaygroundView: View {
     @State private var newTaskScreenIsPresented = false
         
     var body: some View {
-        ZStack(alignment: .bottomTrailing) {
-            List {
-                ForEach(items, id: \.self) { item in
-                    Text(item)
+        NavigationView {
+            ZStack(alignment: .bottomTrailing) {
+                List {
+                    ForEach(items, id: \.self) { item in
+                        NavigationLink(
+                            destination: /*@START_MENU_TOKEN@*/Text("Destination")/*@END_MENU_TOKEN@*/,
+                            label: {
+                                Text(item)
+                            })
+                    }
+                    .onDelete(perform: { indexSet in
+                        items.remove(atOffsets: indexSet)
+                    })
                 }
+                Button(action: {
+                    newTaskScreenIsPresented = true
+                }, label: {
+                    ZStack {
+                        Circle()
+                            .frame(width: 70, height: 70, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                            .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+                        Image(systemName: "plus")
+                            .font(.system(size: 25, weight: .bold))
+                            .foregroundColor(.white)
+                    }
+                })
+                .padding()
+                .sheet(isPresented: $newTaskScreenIsPresented, content: {
+                    NewTaskView(items: $items)
+                })
             }
-            Button(action: {
-                newTaskScreenIsPresented = true
-            }, label: {
-                ZStack {
-                    Circle()
-                        .frame(width: 70, height: 70, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                        .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
-                    Image(systemName: "plus")
-                        .font(.system(size: 25, weight: .bold))
-                        .foregroundColor(.white)
-                }
-            })
-            .padding()
-            .sheet(isPresented: $newTaskScreenIsPresented, content: {
-                NewTaskView(items: $items)
-            })
+            .navigationTitle("Mes tâches")
         }
     }
 }
