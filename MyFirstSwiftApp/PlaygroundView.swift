@@ -8,12 +8,33 @@
 import SwiftUI
 
 struct PlaygroundView: View {
+    
+    @State var items = ["Finir le projet", "Envoyer mail"]
+    @State private var newTaskScreenIsPresented = false
         
     var body: some View {
-        List {
-            ForEach(PreviewData.publications) { publication in
-                PublicationView(publication: publication)
+        ZStack(alignment: .bottomTrailing) {
+            List {
+                ForEach(items, id: \.self) { item in
+                    Text(item)
+                }
             }
+            Button(action: {
+                newTaskScreenIsPresented = true
+            }, label: {
+                ZStack {
+                    Circle()
+                        .frame(width: 70, height: 70, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+                    Image(systemName: "plus")
+                        .font(.system(size: 25, weight: .bold))
+                        .foregroundColor(.white)
+                }
+            })
+            .padding()
+            .sheet(isPresented: $newTaskScreenIsPresented, content: {
+                NewTaskView(items: $items)
+            })
         }
     }
 }

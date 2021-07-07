@@ -19,6 +19,7 @@
 		D09D569B2692F5C3004E7CD9 /* MyFirstSwiftAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09D569A2692F5C3004E7CD9 /* MyFirstSwiftAppUITests.swift */; };
 		D0B2768726944BD900D7894D /* PlaygroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B2768626944BD900D7894D /* PlaygroundView.swift */; };
 		D0B2768F26944E3000D7894D /* PublicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B2768E26944E3000D7894D /* PublicationView.swift */; };
+		D0C0A85626959683004DE9DF /* NewTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C0A85526959683004DE9DF /* NewTaskView.swift */; };
 		D0E4FE5B269338F90089F8B2 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = D0E4FE5A269338F90089F8B2 /* Kingfisher */; };
 		D0E4FE6626934B590089F8B2 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E4FE6526934B590089F8B2 /* HeaderView.swift */; };
 		D0E4FE6B26934D300089F8B2 /* ToggleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E4FE6A26934D300089F8B2 /* ToggleButtonView.swift */; };
@@ -60,6 +61,7 @@
 		D09D569C2692F5C3004E7CD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0B2768626944BD900D7894D /* PlaygroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaygroundView.swift; sourceTree = "<group>"; };
 		D0B2768E26944E3000D7894D /* PublicationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicationView.swift; sourceTree = "<group>"; };
+		D0C0A85526959683004DE9DF /* NewTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskView.swift; sourceTree = "<group>"; };
 		D0E4FE6526934B590089F8B2 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		D0E4FE6A26934D300089F8B2 /* ToggleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -116,6 +118,7 @@
 				D09D567D2692F5C2004E7CD9 /* MyFirstSwiftAppApp.swift */,
 				D09D567F2692F5C2004E7CD9 /* ContentView.swift */,
 				D0B2768626944BD900D7894D /* PlaygroundView.swift */,
+				D0C0A85526959683004DE9DF /* NewTaskView.swift */,
 				D0E4FE6A26934D300089F8B2 /* ToggleButtonView.swift */,
 				D09D56812692F5C3004E7CD9 /* Assets.xcassets */,
 				D09D56862692F5C3004E7CD9 /* Info.plist */,
@@ -291,6 +294,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0C0A85626959683004DE9DF /* NewTaskView.swift in Sources */,
 				D03CFECF269489F900DFA03A /* Publication.swift in Sources */,
 				D09D56802692F5C2004E7CD9 /* ContentView.swift in Sources */,
 				D0B2768726944BD900D7894D /* PlaygroundView.swift in Sources */,
